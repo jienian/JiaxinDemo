@@ -5,15 +5,16 @@ plugins {
 android {
     namespace 'com.jiaxin.browser'
     compileSdk 34
-
     defaultConfig {
         applicationId "com.jiaxin.browser"
-        minSdk 33
+        minSdk 23
         targetSdk 34
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        }
     }
 
     buildTypes {
@@ -36,4 +37,6 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
 }
