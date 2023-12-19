@@ -1,2 +1,2 @@
-# JiaxinDemo APK
+# JiaxinDemo-BrowserAPK 
 [app-debug.apk](app-debug.apk) 
